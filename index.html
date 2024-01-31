@@ -1,0 +1,82 @@
+<html>
+<head>
+    <title>Tetris Game JS_HTML5_CSS3</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+   <div id="wrapper">
+    <div id="left-div">
+        <img src="https://retroworldseries.com/media/uploads/2020/09/Tetris-logo.png" style="width: 200" alt="Tetris_logo">
+        <hr>
+        <div id="score-div">
+            <div id="upcoming-piece"></div>
+        </div>
+        <div style="margin: 10">
+            <div>
+                Score : <div id="score">0</div>
+            </div>
+            <div>
+                Level : <div id="level">1</div>
+            </div>
+        </div>
+        <br>
+        <div id="lines-div">
+            <div id="countdown"></div>
+        </div>
+    </div>
+    <div id="game-container">
+        <canvas id="tetris" width="200" height="400"></canvas>
+    </div>
+    <div id="right-div">
+        <div id="score-div">
+            <label> CONTROLS: Keyboard </label>
+        </div>
+        <div id="lines">
+            <label> TO ROTATE: Arrow Up</label>
+        </div>
+        <br>
+        <div id="lines">
+            <label> TO THE LEFT: Arrow Left </label>
+        </div>
+        <br>
+        <div id="lines">
+            <label> TO THE RIGHT: Arrow Right </label>
+        </div>
+        <br>
+        <div id="lines">
+            <label> TO DOWN: Arrow Down </label>
+        </div>
+        <br>
+        <div id="lines">
+            <label> TO PAUSE: Letter P </label>
+        </div>
+        <br>
+        <div id="lines">
+            <label> TO HARD DROP: key Space </label>
+        </div>
+        <br>
+        <div id="lines">
+            <label> TO END GAME: key esc </label>
+        </div>
+    </div>
+    <br>
+    <div id="play-button">
+        <button style="padding: 10; width: 65">Play</button>
+        <button id="restart-button" style="padding: 10">Restart</button>
+    </div>
+    <hr>
+    <footer class="footer-container">
+        <span>
+            Tetris © 1985~2024 Tetris Holding.
+            Tetris logos, Tetris theme song and Tetriminos
+            are trademarks of Tetris Holding.
+            The Tetris trade dress is owned by Tetris Holding.
+            Licensed to The Tetris Company. Tetris Game Design by Alexey Pajitnov.
+            Tetris Logo Design by Roger Dean. All Rights Reserved.
+        </span>
+    </footer>
+    <audio src="audio/clear.wav"></audio>
+    <script src="tetrominoes.js"></script>
+    <script src="my_tetris.js"></script>
+</body>
+</html>
